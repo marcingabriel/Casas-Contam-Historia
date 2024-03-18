@@ -1,0 +1,36 @@
+.body {
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.map {
+    width: 100%;
+}
+
+.casas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: azure;
+}
+
+.casas div img {
+    width: 100%;
+}
+
+.casas div img:hover {
+    opacity: 0.5;
+}
+
+p {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
