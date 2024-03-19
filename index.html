@@ -3,128 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaflet</title>
+    <title>Mapa Timoteo</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
      <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
+
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 </head>
 <body>
-    <nav class="bg-gray-800 py-4">
-        <div class="p-2 mx-auto flex justify-between items-center">
-            <h1 class="text-white text-xl font-bold">Mapa do Patrimônio</h1>
-    
-            <ul class="flex space-x-4">
-                <li><a href="#" class="text-white hover:text-gray-400">Home</a></li>
-                <li><a href="#" class="text-white hover:text-gray-400">Sobre Nós</a></li>
-            </ul>
+
+
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img/As_casas_Logo.png" style="width: 200px; height: 60px;" class="pl-1">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <!-- Logos de rede social -->
+                <div class="flex items-center space-x-4">
+                    <a href="#"><img src="img/instagram.png" alt="Logo Rede Social 1"  class="h-7"></a>
+                    <a href="#"><img src="img/youtube.png" alt="Logo Rede Social 2" class="h-7"></a>
+                    <!-- Adicione mais logos de redes sociais conforme necessário -->
+                </div>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Mapa</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Inventário</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre nós</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
-
-    <div class="container mx-auto">
+    
+      
+   
+    
+       
+    <div class="container mx-auto mt-24">
+        <h2 class="text-2xl font-semibold mb-2">Pagina Principal</h2>
         <section class="mb-8 mt-8">
             <h2 class="text-2xl font-semibold mb-2">O que é o Mapa do Patrimônio?</h2>
             <p class="text-lg text-gray-700 text-left">O Mapa do Patrimônio organiza e divulga informações sobre o patrimônio cultural brasileiro a partir dos bens tombados (patrimônio material) e registrados (patrimônio imaterial) pelo Instituto do Patrimônio Histórico Nacional (Iphan) e pelo município.</p>
         
             <h2 class="text-2xl font-semibold mb-2">Como funciona?</h2>
-            <p class="text-lg text-gray-700 text-left">Cada bem protegido será identificado com o ícone do Mapa, que dá acesso a um dossiê de informações, fotos e um filme feito especialmente para cada bem.</p>
+            <p class="text-lg text-gray-700 text-left">Cada casa historia de Timoteo será identificado com o ícone do Mapa, que dá acesso a um dossiê de informações, fotos e um filme feito especialmente para cada bem.</p>
         
             <h2 class="text-2xl font-semibold mb-2">O que você pode encontrar?</h2>
-            <p class="text-lg text-gray-700 text-left">Neste mergulho pela cidade de 308 anos, é possível conhecer o modo de vida de gerações de brasileiros que passaram ou viveram por aqui. Casarões, monumentos, igrejas e tradições religiosas revelam o modo de vida de séculos atrás, quando começou a saga de interiorização do país pelos colonizadores.</p>
+            <p class="text-lg text-gray-700 text-left">Neste mergulho pela cidade de 140 anos, é possível conhecer o modo de vida de gerações de brasileiros que passaram ou viveram por aqui. Casas ...</p>
         
             <h2 class="text-2xl font-semibold mb-2">Objetivos do projeto</h2>
             <p class="text-lg text-gray-700 text-left">Esse é só o início de um trabalho que quer facilitar a busca pelas riquezas do patrimônio cultural brasileiro, para moradores e turistas. A ambição é ter o mapa com o dossiê completo de todos os bens protegidos, como um repositório da cultura da cidade, do Estado e do país.</p>
         </section>
 
 
+        <h1 class="text-3xl font-bold text-center text-blue-600 mt-8 mb-2">Mapa</h1>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
 
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-    <h1 class="text-3xl font-bold text-center text-blue-600 mt-8">Mapa</h1>
+
  
     <div class="container mx-auto">
-        <!-- Modal -->
-            <div id="modal1" class=" modal hidden z-100 inset-0 bg-gray-300 bg-opacity-60 overflow-y-auto h-full w-full px-4">
-                    <div class="flex justify-end p-2">
-                        <button onclick="closeModal('modal1')" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </div>                                       
-                <h3 class="text-xl font-normal text-gray-500 mt-5 mb-6">Are you sure you want to delete this user?</h3>  
-            </div>
-
-
-                    <!-- Modal -->
-                    <div id="modal2" class=" modal hidden z-100 inset-0 bg-gray-300 bg-opacity-60 overflow-y-auto h-full w-full px-4">
-                        <div class="flex justify-end p-2">
-                            <button onclick="closeModal('modal2')" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>                                       
-                    <h3 class="text-xl font-normal text-gray-500 mt-5 mb-6">A2?</h3>  
-                </div>
-        <div id="mapid" class="mt-10 mb-8 h-96 bg-gray-400"></div> <!-- Mapa -->
-        
-        <h1 class="text-center mb-4">Casas</h1>
+       
+        <h2 class="text-2xl font-semibold mb-2 text-center mt-5 mb-4 ">Casas</h2>
     
-        <div class="grid grid-cols-5 gap-4">
-            <div id="casa1" class="text-center border p-4">
+        <div class="slick-carousel">
+            <div class="text-center border p-4">
                 <img src="img/36165061bbcfedb0d136f7dc381c920f.jpg" alt="">
                 <h2>Casa1</h2>
                 <p>Teste</p>
             </div>
-            <div id="casa2" class="text-center border p-4">
+            <div class="text-center border p-4">
                 <img src="img/36165061bbcfedb0d136f7dc381c920f.jpg" alt="">
                 <h2>Casa2</h2>
                 <p>Teste</p>
             </div>
-            <div id="casa3" class="text-center border p-4">
+            <div class="text-center border p-4">
                 <img src="img/36165061bbcfedb0d136f7dc381c920f.jpg" alt="">
                 <h2>Casa3</h2>
                 <p>Teste</p>
             </div>
-            <!-- Adicione mais casas conforme necessário -->
         </div>
-
-
-       
-         
-         <script type="text/javascript">
-             window.openModal = function(modalId) {
-                 document.getElementById(modalId).style.display = 'block'
-                 document.getElementsByTagName('body')[0].classList.add('overflow-y-hidden')
-             }
-         
-             window.closeModal = function(modalId) {
-                 document.getElementById(modalId).style.display = 'none'
-                 document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-             }
-         
-             // Close all modals when press ESC
-             document.onkeydown = function(event) {
-                 event = event || window.event;
-                 if (event.keyCode === 27) {
-                     document.getElementsByTagName('body')[0].classList.remove('overflow-y-hidden')
-                     let modals = document.getElementsByClassName('modal');
-                     Array.prototype.slice.call(modals).forEach(i => {
-                         i.style.display = 'none'
-                     })
-                 }
-             };
-         </script>
-        <script src="app.js"></script> <!-- JavaScript do seu mapa, se necessário -->
+        
+            
+        </div>
+        <!-- Adicione mais casas conforme necessário 
+        <button type="button" class=" mb-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+        -->
 
     </div>
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                dots: true, // Mostrar os pontos de navegação
+                infinite: true, // Habilitar navegação infinita
+                slidesToShow: 3, // Número de slides a serem exibidos
+                slidesToScroll: 1, // Número de slides a serem rolados
+                autoplay: true, // Ativar reprodução automática
+                autoplaySpeed: 2000, // Velocidade de reprodução automática em milissegundos
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
     
-
-
+    
+    <script src="app.js"></script> <!-- JavaScript do seu mapa, se necessário -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>
