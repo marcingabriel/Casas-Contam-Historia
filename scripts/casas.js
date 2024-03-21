@@ -51,15 +51,15 @@ function criarCarousel(casas) {
             </button>
 
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
-                <img src="img/casaFoto3.jpg" class="mb-2" alt="...">
+                <img src="${casa.imagemCasa}" class="mb-2" alt="...">
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
-                <img src="img/casaFoto3.jpg" class="mb-2" alt="...">
+                <img src="${casa.imagemCasaOriginal}" class="mb-2" alt="...">
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Desenho</h3>
-                <img src="img/casaDesenho2.jpeg" class="mb-2" alt="...">
-                <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600"> Endereço: Rua das Flores, 123, Bairro Jardim Encantado, Timóteo, MG.</p>
+                <img src="${casa.imagemDesenho}"class="mb-2" alt="...">
+                <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereço}"</p>
             
             
-            <p class="text-left  mb-6 text-sm text-gray-800 dark:text-gray-600">Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade."</p>
+            <p class="${casa.detalhes}"</p>
             
             <div class="max-w-lg rounded overflow-hidden shadow-lg">
                 <!-- Substitua o ID do vídeo do YouTube no atributo src do iframe -->
@@ -92,27 +92,35 @@ function criarCarousel(casas) {
 const casas = [
     {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
-        imagemDesenho: 'img/desenho.jpg'
+        imagemDesenho: 'img/desenho.jpg',
+        drawer: 1
     },
+    {
+        imagemCasa: 'img/casaFoto2.jpg',
+        imagemDesenho: 'img/casaDesenho2.jpeg',
+        drawer:2
+    },    
     {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
         imagemDesenho: 'img/desenho.jpg'
-    },    {
+    },    
+    {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
         imagemDesenho: 'img/desenho.jpg'
-    },    {
+    },    
+    {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
         imagemDesenho: 'img/desenho.jpg'
-    },    {
+    },    
+    {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
         imagemDesenho: 'img/desenho.jpg'
-    },    {
+    },    
+    {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
         imagemDesenho: 'img/desenho.jpg'
-    },    {
-        imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
-        imagemDesenho: 'img/desenho.jpg'
-    },    {
+    },    
+    {
         imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
         imagemDesenho: 'img/desenho.jpg'
     },
