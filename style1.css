@@ -109,7 +109,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 64px; /* Altura da barra de navegação */
+    height: 74px; /* Altura da barra de navegação */
     background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
     z-index: 20; /* Certifique-se de que a barra de navegação esteja sobre a imagem de fundo */
 }
