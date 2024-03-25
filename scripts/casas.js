@@ -85,7 +85,6 @@ function criarCarousel(casas) {
 
 
 
-
     });
 }
 // Exemplo de utilização
