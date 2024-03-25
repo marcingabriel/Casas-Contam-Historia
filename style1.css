@@ -118,3 +118,8 @@ p {
     margin-top: calc(100vh - 64px); /* Compensar a altura da imagem de fundo */
     padding-top: 64px; /* Adicionar preenchimento superior para evitar que o conteúdo seja cortado */
 }
+
+
+.custom-font {
+    font-family: 'Shadows Into Light', cursive;
+}

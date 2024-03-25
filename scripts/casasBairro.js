@@ -9,7 +9,7 @@ function casasPorBairro(casas, bairro, containerId) {
 
     casasDoBairro.forEach((casa, index) => {
         const carouselHtml = `
-        <div id="controls-carousel-${index}" class="mr-5 relative mt-10 mb-10 w-full p-6 flex flex-col" data-carousel="static">
+        <div id="controls-carousel-${index}" class="mr-5 relative mt-5 mb-10 w-full p-4 flex flex-col" data-carousel="static">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="${casa.imagemCasa}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
@@ -99,7 +99,8 @@ const casas = [
     },
     {
         endereco: "Rua B, 456",
-        imagemCasa: "img/casa2.jpg",
+        imagemCasa: "img/casaFoto3.jpg",
+        imagemDesenho: 'img/casaDesenho3.jpg',
         endereco: "Rua A, 123",
         bairro: "Jardim Botânico",
         drawer: 4,
@@ -113,8 +114,29 @@ const casas = [
         bairro: "Centro",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
+    {
+        imagemCasa: 'img/casaFoto2.jpg',
+        imagemDesenho: 'img/casaDesenho2.jpeg',
+        endereco: "Rua A, 123",
+        drawer:3,
+        bairro: "Jardim Botânico",
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+    },
+    {
+        imagemCasa: "img/casaFoto3.jpg",
+        imagemDesenho: 'img/casaDesenho3.jpg',
+        endereco: "Rua A, 123",
+        drawer:5,
+        bairro: "Centro",
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+    },
     // Adicione mais casas conforme necessário
 ];
 
-const bairro = "Centro"; // Bairro que você deseja exibir
-casasPorBairro(casas, bairro,"casas-centro");
+// Chama a função para exibir casas do bairro "Centro"
+const bairroCentro = "Centro";
+casasPorBairro(casas, bairroCentro, "casas-centro");
+
+// Chama a função para exibir casas do bairro "Jardim Botânico"
+const bairroJardimBotanico = "Jardim Botânico";
+casasPorBairro(casas, bairroJardimBotanico, "casas-jardim-botanico");

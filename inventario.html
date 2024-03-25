@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Starter Template - Nordic Shop: Tailwind Toolbox</title>
-    <meta name="description" content="Free open source Tailwind CSS Store template">
-    <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
-    
+    <title>Galeria</title>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-	
+	<link rel="icon" type="image/png" href="img/icon-casa.png">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 
@@ -176,26 +173,6 @@
         </div>
     </div>
 
-    <!--	 
-
-Alternatively if you want to just have a single hero
-
-<section class="w-full mx-auto bg-nordic-gray-light flex pt-12 md:pt-0 md:items-center bg-cover bg-right" style="max-width:1600px; height: 32rem; background-image: url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
-
-	<div class="container mx-auto">
-
-		<div class="flex flex-col w-full lg:w-1/2 justify-center items-start  px-6 tracking-wide">
-			<h1 class="text-black text-2xl my-4">Stripy Zig Zag Jigsaw Pillow and Duvet Set</h1>
-			<a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">products</a>
-
-		</div>
-
-	  </div>
-
-</section>
-
--->
-
     <section class="bg-white py-8">
 
         <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
@@ -224,8 +201,31 @@ Alternatively if you want to just have a single hero
                     </div>
               </div>
             </nav>
+            <div class="container mx-auto">
+                <input type="text" id="barraPesquisa" class="w-full p-2 border border-gray-300 rounded-md mb-4" placeholder="Pesquisar bairro...">
+                
+               
+            </div>
+            
 
-            <div id="carousels-container" class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+            <div class="z-10 container mx-auto mt-4">
+                <div id="container-centro">
+                    <h1 class="text-center uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl ">Centro</h1>
+                    <div id="casas-centro" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <!-- Conteúdo da grid aqui -->
+                    </div>
+                </div>
+            
+                <div id="container-jardim-botanico mt-4">
+                    <h1 class="text-center uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl ">Jardim Botanico</h1>
+                    <div id="casas-jardim-botanico" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <!-- Conteúdo da grid aqui -->
+                    </div>
+                </div>
+            </div>
+            
+            
+            
 
                 
 <footer class="container mx-auto bg-white py-8 border-t border-gray-400">
@@ -272,12 +272,8 @@ Alternatively if you want to just have a single hero
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-
-
-
-
-
-<script src="scripts/casas.js"></script> 
+<script src="scripts/casasBairro.js"></script> 
+<script src="scripts/search.js"></script>
 
 
 
