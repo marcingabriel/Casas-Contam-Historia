@@ -87,3 +87,34 @@ p {
 }
 
 
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh ); /* Altura total da tela menos a altura da barra de navegação */
+    background-image: url('https://www.historiasdecasa.com.br/wp-content/uploads/2020/12/capa-2-decoracao-historias-de-casa-sala-de-estar-com-sofa-rosa-isabel.jpg');
+    background-size: cover;
+    background-position: top;
+    z-index: 10; /* Certifique-se de que a imagem de fundo esteja atrás da nav */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+/* CSS para a barra de navegação */
+.transparent-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px; /* Altura da barra de navegação */
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo com transparência */
+    z-index: 20; /* Certifique-se de que a barra de navegação esteja sobre a imagem de fundo */
+}
+
+.content {
+    margin-top: calc(100vh - 64px); /* Compensar a altura da imagem de fundo */
+    padding-top: 64px; /* Adicionar preenchimento superior para evitar que o conteúdo seja cortado */
+}
