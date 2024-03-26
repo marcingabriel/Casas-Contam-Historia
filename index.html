@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <nav class="transparent-nav sticky top-0 z-40 backdrop-filter backdrop-blur-xl border-b border-gray-300 ">
+    <nav class="transparent-nav sticky top-0 z-40 backdrop-filter backdrop-blur-xl border-b border-gray-500 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-3 pb-4">
             <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="img/As_casas_Logo-removebg.png" style="width: 180px; height: 50px;" class="pl-1">
@@ -62,7 +62,7 @@
         </div>
     </nav>
 
-    
+  
  
     
     <div class="background-image filter brightness-75">
@@ -79,31 +79,40 @@
     <div class="content container mx-auto mt-20">
         <img src="img/Logo-2.png"  class="mx-auto mb-4">
         <section class="mb-8 mt-8">
-            <h2 class="text-2xl font-semibold mb-2">O que é o Mapa "As casas tambem contam historia"?</h2>
-            <p class="text-lg text-gray-700 text-left">O Mapa "As casas tambem contam historia" organiza e divulga informações sobre o patrimônio cultural brasileiro a partir dos bens tombados (patrimônio material) e registrados (patrimônio imaterial) pelo Instituto do Patrimônio Histórico Nacional (Iphan) e pelo município.</p>
+            <h2 class="roboto text-2xl font-semibold mb-2 text-gray-700">O que é o Mapa "As casas tambem contam historia"?</h2>
+            <p class="roboto text-lg text-gray-700 text-left">O Mapa "As casas tambem contam historia" organiza e divulga informações sobre o patrimônio cultural brasileiro a partir dos bens tombados (patrimônio material) e registrados (patrimônio imaterial) pelo Instituto do Patrimônio Histórico Nacional (Iphan) e pelo município.</p>
         
-            <h2 class="text-2xl font-semibold mb-2">Como funciona?</h2>
-            <p class="text-lg text-gray-700 text-left">Cada casa historia de Timoteo será identificado com o ícone do Mapa, que dá acesso a um dossiê de informações, fotos e um filme feito especialmente para cada bem.</p>
+            <h2 class="roboto text-2xl font-semibold mb-2 text-gray-700">Como funciona?</h2>
+            <p class="roboto text-lg text-gray-700 text-left">Cada casa historia de Timoteo será identificado com o ícone do Mapa, que dá acesso a um dossiê de informações, fotos e um filme feito especialmente para cada bem.</p>
         
-            <h2 class="text-2xl font-semibold mb-2">O que você pode encontrar?</h2>
+            <h2 class="roboto text-2xl font-semibold mb-2 text-gray-700">O que você pode encontrar?</h2>
             <p class="text-lg text-gray-700 text-left">Neste mergulho pela cidade de 140 anos, é possível conhecer o modo de vida de gerações de brasileiros que passaram ou viveram por aqui. Casas ...</p>
         
-            <h2 class="text-2xl font-semibold mb-2">Objetivos do projeto</h2>
-            <p class="text-lg text-gray-700 text-left">Esse é só o início de um trabalho que quer facilitar a busca pelas riquezas do patrimônio cultural brasileiro, para moradores e turistas. A ambição é ter o mapa com o dossiê completo de todos os bens protegidos, como um repositório da cultura da cidade, do Estado e do país.</p>
+            <h2 class="roboto text-2xl font-semibold mb-2 text-gray-700">Objetivos do projeto</h2>
+            <p class="roboto text-lg text-gray-700 text-left">Esse é só o início de um trabalho que quer facilitar a busca pelas riquezas do patrimônio cultural brasileiro, para moradores e turistas. A ambição é ter o mapa com o dossiê completo de todos os bens protegidos, como um repositório da cultura da cidade, do Estado e do país.</p>
         </section>
 
 
         <h1 class="text-3xl font-bold text-center text-blue-600 mt-8 mb-2 underline">Mapa</h1>
     </div>
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&ehbc=2E312F&noprof=1" width="95%" height="600" class="ml-10" ></iframe>
+        <iframe id="meuMapa" src="https://www.google.com/maps/d/u/0/embed?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&ehbc=2E312F&noprof=1" width="95%" height="600" class="ml-10" ></iframe>
 
     <div class="container mx-auto mt-24">
         <h1 class="text-3xl font-bold text-center text-gray-600 mt-5">Casas Portifolio</h1>
         <div class="flex mt-5">
                                      
-            <div id="casas-centro" class=" z-35 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
-            
+            <div id="casas-centro" class="z-35 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
         </div>
+        <div class="text-center">
+            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                Ver mais
+                </span>
+                </button>
+
+
+        </div>
+
         
     </div>
 
@@ -113,7 +122,8 @@
     </div>
 
 
-    
+   
+
     
     <script src="app.js"></script> <!-- JavaScript do seu mapa, se necessário -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

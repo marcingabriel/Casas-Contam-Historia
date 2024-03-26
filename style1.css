@@ -123,3 +123,8 @@ p {
 .custom-font {
     font-family: 'Shadows Into Light', cursive;
 }
+
+.roboto {
+
+    font-family: 'Roboto', sans-serif; /* Para o texto do corpo */
+} 
