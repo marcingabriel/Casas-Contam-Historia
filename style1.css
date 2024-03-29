@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .body {
     margin: 0px;
     padding: 0;
@@ -100,7 +104,6 @@ p {
     justify-content: center;
     align-items: center;
     display: flex;
-
 }
 
 /* CSS para a barra de navegação */
@@ -114,9 +117,9 @@ p {
     z-index: 20; /* Certifique-se de que a barra de navegação esteja sobre a imagem de fundo */
 }
 
-.content {
-    margin-top: calc(100vh - 64px); /* Compensar a altura da imagem de fundo */
-    padding-top: 64px; /* Adicionar preenchimento superior para evitar que o conteúdo seja cortado */
+.mt-custom {
+    margin-top: calc(100vh - 60px); /* Altura total da tela menos a altura do espaçador */
+    padding-top: 64px;
 }
 
 
