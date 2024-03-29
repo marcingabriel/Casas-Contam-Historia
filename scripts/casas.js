@@ -151,7 +151,7 @@ const casas = [
     },
     {
         imagemCasa: "img/casaFoto3.jpg",
-        imagemDesenho: 'img/casaDesenho3.jpg',
+        imagemDesenho: 'img/CasaDesenho3.jpg',
         endereco: "Rua A, 123",
         drawer:5,
         bairro: "Centro",
