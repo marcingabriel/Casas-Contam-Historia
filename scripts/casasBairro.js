@@ -73,7 +73,7 @@ function casasPorBairro(casas, bairro, containerId) {
                
       
                 <div class="py-4 text-center items-center">
-                    <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" onclick="window.open('https://www.google.com/maps/d/u/0/viewer?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&femb=1&ll=-19.58261817775395%2C-42.643375779621344&z=20', '_blank')">Ver no Google Maps</button>     
+                    <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" onclick="window.open('https://www.google.com/maps/d/u/0/viewer?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&femb=1&ll=-19.585877802214714%2C-42.648934215410065&z=22', '_blank')">Ver no Google Maps</button>     
                 </div>
         </div>
         `;
@@ -128,7 +128,7 @@ const casas = [
         imagemCasa: "img/casaFoto3.jpg",
         imagemDesenho: 'img/CasaDesenho3.jpg',
         endereco: "Rua A, 123",
-        bairro: "Jardim Botânico",
+        bairro: "Santa Cecilia",
         drawer: 4,
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
@@ -146,7 +146,7 @@ const casas = [
         imagemDesenho: 'img/casaDesenho2.jpeg',
         endereco: "Rua A, 123",
         drawer:3,
-        bairro: "Jardim Botânico",
+        bairro: "Santa Cecilia",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
     {
@@ -164,9 +164,9 @@ const casas = [
 const bairroCentro = "Centro";
 casasPorBairro(casas, bairroCentro, "casas-centro");
 
-// Chama a função para exibir casas do bairro "Jardim Botânico"
-const bairroJardimBotanico = "Jardim Botânico";
-casasPorBairro(casas, bairroJardimBotanico, "casas-jardim-botanico");
+// Chama a função para exibir casas do bairro "Santa Cecilia"
+const bairroJardimBotanico = "Santa Cecilia";
+casasPorBairro(casas, bairroJardimBotanico, "casas-santa-cecilia");
 
 
 
