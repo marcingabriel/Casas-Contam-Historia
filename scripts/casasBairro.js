@@ -124,12 +124,11 @@ const casas = [
 
     },
     {
-        endereco: "Rua B, 456",
         imagemCasa: "img/casaFoto3.jpg",
         imagemDesenho: 'img/CasaDesenho3.jpg',
         endereco: "Rua A, 123",
-        bairro: "Santa Cecilia",
-        drawer: 4,
+        drawer:5,
+        bairro: "Centro",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
     {
@@ -142,6 +141,15 @@ const casas = [
     },
     
     {
+        endereco: "Rua B, 456",
+        imagemCasa: "img/casaFoto3.jpg",
+        imagemDesenho: 'img/CasaDesenho3.jpg',
+        endereco: "Rua A, 123",
+        bairro: "Santa Cecilia",
+        drawer: 4,
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+    },
+    {
         imagemCasa: 'img/casaFoto2.jpg',
         imagemDesenho: 'img/casaDesenho2.jpeg',
         endereco: "Rua A, 123",
@@ -150,11 +158,28 @@ const casas = [
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
     {
+        imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
+        endereco: "Rua A, 123",
+        imagemDesenho: 'img/desenho.jpg',
+        drawer: 1,
+        bairro: "Funcionarios",
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
+    },
+    {
         imagemCasa: "img/casaFoto3.jpg",
         imagemDesenho: 'img/CasaDesenho3.jpg',
         endereco: "Rua A, 123",
         drawer:5,
-        bairro: "Centro",
+        bairro: "Funcionarios",
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+    },
+    {
+        imagemCasa: 'img/casaFoto2.jpg',
+        imagemDesenho: 'img/casaDesenho2.jpeg',
+        endereco: "Rua A, 123",
+        drawer:2,
+        bairro: "Funcionarios",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
     // Adicione mais casas conforme necessário
@@ -167,6 +192,9 @@ casasPorBairro(casas, bairroCentro, "casas-centro");
 // Chama a função para exibir casas do bairro "Santa Cecilia"
 const bairroJardimBotanico = "Santa Cecilia";
 casasPorBairro(casas, bairroJardimBotanico, "casas-santa-cecilia");
+
+const bairroFuncionarios = "Funcionarios";
+casasPorBairro(casas, bairroFuncionarios, "casas-funcionarios");
 
 
 
