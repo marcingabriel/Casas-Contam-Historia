@@ -1,5 +1,6 @@
 function casasPorBairro(casas, bairro, containerId) {
     const container = document.getElementById(containerId);
+    container.innerHTML = ''; // Limpa o conteúdo do container
 
     const casasDoBairro = casas.filter(casa => casa.bairro === bairro);
     if (casasDoBairro.length === 0) {
@@ -11,13 +12,12 @@ function casasPorBairro(casas, bairro, containerId) {
         const carouselHtml = `
         <div id="controls-carousel-${index}" class="mr-5 relative mt-5 mb-5 w-full p-4 flex flex-col" data-carousel="static">
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div class="loading-spinner absolute inset-0 flex items-center justify-center spinnerContainer"></div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img id="imagemCasa" src="${casa.imagemCasa}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110 " alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
-
-
+                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img src="${casa.imagemDesenho}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+                    <img  src="${casa.imagemDesenho}" class="outraDiv absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
                 </div>
             </div>
             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none text-gray-800 dark:text-white" data-carousel-prev>
@@ -38,13 +38,13 @@ function casasPorBairro(casas, bairro, containerId) {
             </button>
             <p class="text-center">${casa.endereco}</p>
             <div class="text-center mt-2 ">
-            <button type="button" class=" bg-white text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Detalhes</button>
+                <button type="button" class=" bg-white text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Detalhes</button>
             </div>
-    </div>
+        </div>
     `;
-        container.innerHTML += carouselHtml;
-
-        const drawerHtml = `
+    container.innerHTML += carouselHtml;
+    
+     const drawerHtml = `
         <div id="${casa.drawer}" class="fixed top-0 left-0 z-40 h-full p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-96 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
             <h5 id="drawer-label" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
@@ -56,27 +56,27 @@ function casasPorBairro(casas, bairro, containerId) {
             <span class="sr-only">Close menu</span>
             </button>
 
-                <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
-                <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 " alt="...">
-                <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
-                <img  id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2" alt="...">
-                <h3 class="text-center font-semibold mb-2 text-gray-600">Desenho</h3>
-                <img id="imageUrl3" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemDesenho}"class="mb-2" alt="...">
-                <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereco}"</p>
-                <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600"> ${casa.detalhes}</p>
+            <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
+            <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 " alt="...">
+            <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
+            <img  id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2" alt="...">
+            <h3 class="text-center font-semibold mb-2 text-gray-600">Desenho</h3>
+            <img id="imageUrl3" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemDesenho}"class="mb-2" alt="...">
+            <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereco}"</p>
+            <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600"> ${casa.detalhes}</p>
                 
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Documentario da casa</div>
-                        <p class="text-gray-700 text-base text-left">
-                            Descrição do vídeo.
-                        </p>
-                </div>
-                <iframe width="w-full" height="350" src="https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Documentario da casa</div>
+                <p class="text-gray-700 text-base text-left">
+                    Descrição do vídeo.
+                </p>
+            </div>
+            <iframe width="w-full" height="350" src="https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                
       
-                <div class="py-4 text-center items-center">
-                    <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" onclick="window.open('https://www.google.com/maps/d/u/0/viewer?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&femb=1&ll=-19.585877802214714%2C-42.648934215410065&z=22', '_blank')">Ver no Google Maps</button>     
-                </div>
+            <div class="py-4 text-center items-center">
+                <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" onclick="window.open('https://www.google.com/maps/d/u/0/viewer?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&femb=1&ll=-19.585877802214714%2C-42.648934215410065&z=22', '_blank')">Ver no Google Maps</button>     
+            </div>
         </div>
         `;
         container.innerHTML += drawerHtml;
@@ -113,6 +113,7 @@ function casasPorBairro(casas, bairro, containerId) {
 
     });
 }
+
 
 // Exemplo de utilização para exibir casas de um bairro específico
 const casas = [
@@ -212,6 +213,22 @@ imageElements.forEach(image => {
         modalImage.src = imageUrl;
     });
 });
+
+
+const spinnerContainers = document.querySelectorAll('.spinnerContainer');
+    const outrasDivs = document.querySelectorAll('.outraDiv');
+
+
+    function ocultarSpinnerContainers() {
+        spinnerContainers.forEach(container => {
+            container.style.display = 'none';
+        });
+        console.log('Mouse entrou em uma outraDiv');
+    }
+
+    outrasDivs.forEach(div => {
+        div.addEventListener('mouseenter', ocultarSpinnerContainers);
+    });
 
 
 
