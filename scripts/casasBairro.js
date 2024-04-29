@@ -14,10 +14,11 @@ function casasPorBairro(casas, bairro, containerId) {
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <div class="loading-spinner absolute inset-0 flex items-center justify-center spinnerContainer"></div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full  h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                    <img  src="${casa.imagemDesenho}" class="outraDiv absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+                <img src="${casa.imagemDesenho}" class="outraDiv w-full h-2/3 absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+
                 </div>
             </div>
             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none text-gray-800 dark:text-white" data-carousel-prev>
@@ -128,79 +129,84 @@ const casas = [
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
+            //Bairro Funcionarios 
     {
-        imagemCasa: "img/casaFoto3.jpg",
-        imagemDesenho: 'img/CasaDesenho3.jpg',
-        endereco: "Rua A, 123",
-        drawer:5,
-        bairro: "Centro",
+        imagemCasa: 'img/casas/Funcionarios/Avenida Cyro Cotta Poggiali, 09.png',
+        endereco: "Bairro Funcionarios. Avenida Cyro Cotta Poggiali, 09",
+        imagemDesenho: 'img/desenhos/4.jpg',
+        drawer: 2,
+        bairro: "Funcionarios",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
     },
     {
-        imagemCasa: 'img/casaFoto2.jpg',
-        imagemDesenho: 'img/casaDesenho2.jpeg',
-        endereco: "Rua A, 123",
-        drawer:2,
-        bairro: "Centro",
+        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, n 11.jpg',
+        endereco: "Bairro Funcionarios. Avenida Alberto Batista Gallo, n 11.",
+        imagemDesenho: 'img/desenhos/3.jpg',
+        drawer: 3,
+        bairro: "Funcionarios",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
     },
-    
     {
-        endereco: "Rua B, 456",
-        imagemCasa: "img/casaFoto3.jpg",
-        imagemDesenho: 'img/CasaDesenho3.jpg',
-        endereco: "Rua A, 123",
-        bairro: "Santa Cecilia",
+        imagemCasa: 'img/casas/Funcionarios/Avenida Jucelino Kubisckek, 12.png',
+        endereco: "Bairro Funcionarios. Avenida Jucelino Kubisckek, 12.",
+        imagemDesenho: 'img/desenhos/5.jpg',
         drawer: 4,
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
-    },
-    {
-        imagemCasa: 'img/casaFoto2.jpg',
-        imagemDesenho: 'img/casaDesenho2.jpeg',
-        endereco: "Rua A, 123",
-        drawer:3,
-        bairro: "Santa Cecilia",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
-    },
-    {
-        imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
-        endereco: "Rua A, 123",
-        imagemDesenho: 'img/desenho.jpg',
-        drawer: 1,
         bairro: "Funcionarios",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
     {
-        imagemCasa: "img/casaFoto3.jpg",
-        imagemDesenho: 'img/CasaDesenho3.jpg',
-        endereco: "Rua A, 123",
-        drawer:5,
+        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, n 11.jpg',
+        endereco: "Bairro Funcionarios. Avenida Alberto Batista Gallo, n 11.",
+        imagemDesenho: 'img/desenhos/Funcionarios/fachada2.png',
+        drawer: 5,
         bairro: "Funcionarios",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
-    },
-    {
-        imagemCasa: 'img/casaFoto2.jpg',
-        imagemDesenho: 'img/casaDesenho2.jpeg',
-        endereco: "Rua A, 123",
-        drawer:2,
-        bairro: "Funcionarios",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
     },
 
-    //
+    //Bairro Timirim
+    {
+        imagemCasa: 'img/casas/Timirim/Rua Teobaldo Gomes Pinto, 15.png',
+        endereco: "Bairro Timirim. Rua Teobaldo Gomes Pinto, 15",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 6,
+        bairro: "Timirim",
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
+    },
+
 ];
 
 // Chama a função para exibir casas do bairro "Centro"
+
 const bairroCentro = "Centro";
 casasPorBairro(casas, bairroCentro, "casas-centro");
 
-// Chama a função para exibir casas do bairro "Santa Cecilia"
-const bairroJardimBotanico = "Santa Cecilia";
-casasPorBairro(casas, bairroJardimBotanico, "casas-santa-cecilia");
-
 const bairroFuncionarios = "Funcionarios";
 casasPorBairro(casas, bairroFuncionarios, "casas-funcionarios");
+
+const bairroTimirim = "Timirim";
+casasPorBairro(casas, bairroTimirim, "casas-timirim");
+
+
+//const bairroBromelias = "Bromelias";
+//casasPorBairro(casas, bairroBromelias, "casas-bromelias");
+
+//const bairroOlaria = "Olaria";
+//casasPorBairro(casas, bairroOlaria, "casas-olaria");
+
+//const bairroQuintandinha = "Quintandinha";
+//casasPorBairro(casas, bairroQuintandinha, "casas-quintandinha");
+
+//const bairroTecnicos = "Tecnicos";
+//casasPorBairro(casas, bairroTecnicos, "casas-tecnicos");
+
+
+
+
 
 
 
