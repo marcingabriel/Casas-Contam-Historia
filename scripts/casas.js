@@ -56,11 +56,14 @@ function casasPorBairro(casas, bairro, containerId) {
             </button>
 
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
-                <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 " alt="...">
+                <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
-                <img  id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2" alt="...">
+                
+                <img id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Desenho</h3>
-                <img id="imageUrl3" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemDesenho}"class="mb-2" alt="...">
+                
+                <img id="imageUrl3" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemDesenho}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
+                
                 <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereco}"</p>
                 <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600"> ${casa.detalhes}</p>
                 
@@ -116,54 +119,40 @@ function casasPorBairro(casas, bairro, containerId) {
 // Exemplo de utilização para exibir casas de um bairro específico
 const casas = [
     {
-        imagemCasa: 'img/36165061bbcfedb0d136f7dc381c920f.jpg',
+        imagemCasa: 'img/casas/Funcionarios/Avenida Cyro Cotta Poggiali, 09.png',
         endereco: "Rua A, 123",
-        imagemDesenho: 'img/desenho.jpg',
+        imagemDesenho: 'img/desenhos/Funcionarios/fachada3.png',
         drawer: 1,
-        bairro: "Centro",
+        bairro: "Destaque",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
+
     {
-        endereco: "Rua B, 456",
-        imagemCasa: "img/casaFoto3.jpg",
-        imagemDesenho: 'img/casaDesenho3.jpg',
+        imagemCasa: 'img/casas/Timirim/Rua Teobaldo Gomes Pinto, 15.png',
         endereco: "Rua A, 123",
-        bairro: "Jardim Botânico",
-        drawer: 4,
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 2,
+        bairro: "Destaque",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
     },
+
     {
-        imagemCasa: 'img/casaFoto2.jpg',
-        imagemDesenho: 'img/casaDesenho2.jpeg',
+        imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 8.png',
         endereco: "Rua A, 123",
-        drawer:2,
-        bairro: "Centro",
+        imagemDesenho: 'img/desenhos/tecnicos/fachada1.png',
+        drawer: 3,
+        bairro: "Destaque",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+
     },
-    
-    {
-        imagemCasa: 'img/casaFoto2.jpg',
-        imagemDesenho: 'img/casaDesenho2.jpeg',
-        endereco: "Rua A, 123",
-        drawer:3,
-        bairro: "Jardim Botânico",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
-    },
-    {
-        imagemCasa: "img/casaFoto3.jpg",
-        imagemDesenho: 'img/CasaDesenho3.jpg',
-        endereco: "Rua A, 123",
-        drawer:5,
-        bairro: "Centro",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
-    },
-    // Adicione mais casas conforme necessário
+   
 ];
 
 // Chama a função para exibir casas do bairro "Centro"
-const bairroCentro = "Centro";
-casasPorBairro(casas, bairroCentro, "casas-centro");
+const CasasDestaque = "Destaque";
+casasPorBairro(casas, CasasDestaque, "destaque");
 
 
 
