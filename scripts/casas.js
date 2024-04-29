@@ -57,9 +57,10 @@ function casasPorBairro(casas, bairro, containerId) {
 
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
                 <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
+                <!--
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
-                
                 <img id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
+                -->
                 <h3 class="text-center font-semibold mb-2 text-gray-600">Desenho</h3>
                 
                 <img id="imageUrl3" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemDesenho}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
@@ -120,7 +121,7 @@ function casasPorBairro(casas, bairro, containerId) {
 const casas = [
     {
         imagemCasa: 'img/casas/Funcionarios/Avenida Cyro Cotta Poggiali, 09.png',
-        endereco: "Rua A, 123",
+        endereco: "Bairro Funcionarios. Avenida Cyro Cotta Poggiali, 09",
         imagemDesenho: 'img/desenhos/Funcionarios/fachada3.png',
         drawer: 1,
         bairro: "Destaque",
@@ -130,7 +131,7 @@ const casas = [
 
     {
         imagemCasa: 'img/casas/Timirim/Rua Teobaldo Gomes Pinto, 15.png',
-        endereco: "Rua A, 123",
+        endereco: "Bairro Timirim. Rua Teobaldo Gomes Pinto, 15",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
         drawer: 2,
         bairro: "Destaque",
@@ -140,7 +141,7 @@ const casas = [
 
     {
         imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 8.png',
-        endereco: "Rua A, 123",
+        endereco: "Vila dos tecnicos. Rua Trinta e Sete, 8",
         imagemDesenho: 'img/desenhos/tecnicos/fachada1.png',
         drawer: 3,
         bairro: "Destaque",

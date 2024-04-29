@@ -58,8 +58,10 @@ function casasPorBairro(casas, bairro, containerId) {
 
             <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
             <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
-            <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>  
+            <!--
+            <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
             <img id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
+            -->
             <h3 class="text-center font-semibold mb-2 text-gray-600">Desenho</h3> 
             <img id="imageUrl3" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemDesenho}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
             <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereco}"</p>
@@ -186,7 +188,7 @@ const casas = [
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
     },
 
-    // Adicione mais casas conforme necessário
+    //
 ];
 
 // Chama a função para exibir casas do bairro "Centro"
