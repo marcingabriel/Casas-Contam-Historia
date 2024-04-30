@@ -129,7 +129,7 @@ const casas = [
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
-            //Bairro Funcionarios 
+        //Bairro Funcionarios 
     {
         imagemCasa: 'img/casas/Funcionarios/Avenida Cyro Cotta Poggiali, 09.png',
         endereco: "Bairro Funcionarios. Avenida Cyro Cotta Poggiali, 09",
@@ -167,7 +167,7 @@ const casas = [
 
     },
 
-    //Bairro Timirim
+        //Bairro Timirim
     {
         imagemCasa: 'img/casas/Timirim/Rua Teobaldo Gomes Pinto, 15.png',
         endereco: "Bairro Timirim. Rua Teobaldo Gomes Pinto, 15",
@@ -177,6 +177,8 @@ const casas = [
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
+
+    //Bairro Vila dos tecnicos
 
 ];
 
