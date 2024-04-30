@@ -136,7 +136,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/4.jpg',
         drawer: 2,
         bairro: "Funcionarios",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+        detalhes: ""
 
     },
     {
@@ -145,7 +145,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/3.jpg',
         drawer: 3,
         bairro: "Funcionarios",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+        detalhes: ""
 
     },
     {
@@ -154,7 +154,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/5.jpg',
         drawer: 4,
         bairro: "Funcionarios",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+        detalhes: ""
 
     },
     {
@@ -163,7 +163,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/Funcionarios/fachada2.png',
         drawer: 5,
         bairro: "Funcionarios",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
+        detalhes: ""
 
     },
 
@@ -179,6 +179,20 @@ const casas = [
     },
 
     //Bairro Vila dos tecnicos
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 8.png',
+        endereco: "Vila dos tecnicos. Rua Trinta e Sete, 8",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 7,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+
+
+
 
 ];
 
@@ -203,8 +217,8 @@ casasPorBairro(casas, bairroTimirim, "casas-timirim");
 //const bairroQuintandinha = "Quintandinha";
 //casasPorBairro(casas, bairroQuintandinha, "casas-quintandinha");
 
-//const bairroTecnicos = "Tecnicos";
-//casasPorBairro(casas, bairroTecnicos, "casas-tecnicos");
+const bairroTecnicos = "Tecnicos";
+casasPorBairro(casas, bairroTecnicos, "casas-tecnicos");
 
 
 

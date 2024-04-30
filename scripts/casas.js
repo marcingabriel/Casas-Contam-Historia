@@ -142,7 +142,7 @@ const casas = [
     {
         imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 8.png',
         endereco: "Vila dos tecnicos. Rua Trinta e Sete, 8",
-        imagemDesenho: 'img/desenhos/tecnicos/fachada1.png',
+        imagemDesenho: 'img/desenhos/Tecnicos/fachada1.png',
         drawer: 3,
         bairro: "Destaque",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
