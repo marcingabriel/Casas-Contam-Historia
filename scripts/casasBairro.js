@@ -14,10 +14,10 @@ function casasPorBairro(casas, bairro, containerId) {
             <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <div class="loading-spinner absolute inset-0 flex items-center justify-center spinnerContainer"></div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full  h-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full  h-3/4 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="${casa.imagemDesenho}" class="outraDiv w-full h-2/3 absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+                <img src="${casa.imagemDesenho}" class="outraDiv w-full h-3/4 absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
 
                 </div>
             </div>
@@ -58,7 +58,7 @@ function casasPorBairro(casas, bairro, containerId) {
             </button>
 
             <h3 class="text-center font-semibold mb-2 text-gray-600">Atualmente</h3>
-            <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
+            <img id="imageUrl" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasa}" class="mb-2 w-full h-1/3  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
             <!--
             <h3 class="text-center font-semibold mb-2 text-gray-600">Original</h3>
             <img id="imageUrl2" data-modal-target="crud-modal" data-modal-toggle="crud-modal" src="${casa.imagemCasaOriginal}" class="mb-2  transform transition-transform duration-300 hover:scale-105" alt="..." title="Clique para ampliar a imagem">
@@ -190,6 +190,88 @@ const casas = [
 
     },
 
+    {
+        imagemCasa: 'img/casas/tecnicos/Rua Jair de Freitas, 3.jpg',
+        endereco: "Rua Jair de Freitas, 3",
+        imagemDesenho: 'img/desenhos/7.jpg',
+        drawer: 8,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 32.jpg',
+        endereco: "Rua Trinta e Sete, 32.",
+        imagemDesenho: 'img/desenhos/1.jpg',
+        drawer: 9,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Avenida Levindo Ribeiro Araujo, 30.jpg',
+        endereco: "Avenida Levindo Ribeiro Araujo, 30.",
+        imagemDesenho: 'img/desenhos/8.jpg',
+        drawer: 10,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 1.jpg',
+        endereco: "Rua Trinta e Sete, 1.",
+        imagemDesenho: 'img/desenhos/1.jpg',
+        drawer: 11,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Avenida Levindo Ribeiro Araujo,30.jpg',
+        endereco: " Avenida Levindo Ribeiro Araujo,30.",
+        imagemDesenho: 'img/desenhos/9.jpg',
+        drawer: 13,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+    {
+        imagemCasa: 'img/casas/tecnicos/Avenida Levindo Ribeiro Araujo, 22.jpg',
+        endereco: "Avenida Levindo Ribeiro Araujo, 22.",
+        imagemDesenho: 'img/desenhos/10.jpg',
+        drawer: 14,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Rua Jair de Freitas, 1.jpg',
+        endereco: "Rua Jair de Freitas, 2.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 15,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+
+    {
+        imagemCasa: 'img/casas/tecnicos/Rua Trinta e Sete, 10.jpg',
+        endereco: "Rua Trinta e Sete, 10.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 16,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+
+   
 
 
 
