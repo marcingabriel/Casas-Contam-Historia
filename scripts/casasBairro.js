@@ -74,7 +74,7 @@ function casasPorBairro(casas, bairro, containerId) {
                     Descrição do vídeo.
                 </p>
             </div>
-            <iframe width="w-full" height="350" src="https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="w-full" height="350" src="${casa.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                
       
             <div class="py-4 text-center items-center">
@@ -126,8 +126,8 @@ const casas = [
         imagemDesenho: 'img/desenho.jpg',
         drawer: 1,
         bairro: "Centro",
-        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
-
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
+        detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade",
     },
         //Bairro Funcionarios 
     {
@@ -136,6 +136,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/4.jpg',
         drawer: 2,
         bairro: "Funcionarios",
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
         detalhes: ""
 
     },
@@ -145,6 +146,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/3.jpg',
         drawer: 3,
         bairro: "Funcionarios",
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
         detalhes: ""
 
     },
@@ -154,6 +156,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/5.jpg',
         drawer: 4,
         bairro: "Funcionarios",
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
         detalhes: ""
 
     },
@@ -163,6 +166,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/Funcionarios/fachada2.png',
         drawer: 5,
         bairro: "Funcionarios",
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
         detalhes: ""
 
     },
@@ -174,6 +178,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
         drawer: 6,
         bairro: "Timirim",
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
@@ -186,6 +191,7 @@ const casas = [
         imagemDesenho: 'img/desenhos/2.jpg',
         drawer: 7,
         bairro: "Tecnicos",
+        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
         detalhes: ""
 
     },
@@ -270,8 +276,422 @@ const casas = [
 
     },
 
-
+    //Bairro Bromelias
    
+    {
+        imagemCasa: 'img/casas/Bromelias/Avenida Amazonas, 30..jpg',
+        endereco: "Avenida Amazonas, 30.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 17,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Avenida Jovino Augusto da Silva, 699..jpg',
+        endereco: "Avenida Jovino Augusto da Silva, 699.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 18,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Avenida Linthiz Oliveira Novais, 9..jpg',
+        endereco: "Avenida Linthiz Oliveira Novais, 9.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 19,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Avenida Linthiz Oliveira Novais, 11..jpg',
+        endereco: "Avenida Linthiz Oliveira Novais, 11.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 20,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Avenida Linthiz Oliveira Novais, 14..jpg',
+        endereco: "Avenida Linthiz Oliveira Novais, 14.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 21,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua 19 de Novembro.jpg',
+        endereco: "Rua 19 de Novembro.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 23,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Demerval Klein, 1 (2).jpg',
+        endereco: "Rua Demerval Klein, 1.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 24,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Domingos Pereira Sobrinho, 6..jpg',
+        endereco: "Rua Domingos Pereira Sobrinho, 6.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 25,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Domingos Pereira Sobrinho, 7..jpg',
+        endereco: "Rua Domingos Pereira Sobrinho, 7.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 26,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Gregório de Morais, 3..jpg',
+        endereco: "Rua Gregório de Morais, 3.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 27,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Gregório de Morais, 6..jpg',
+        endereco: "Rua Gregório de Morais, 6.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 28,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Joaquim Lima do Amaral, 15.jpg',
+        endereco: "Rua Joaquim Lima do Amaral, 15.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 29,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua José Fernandes Almeida, 21.jpg',
+        endereco: "Rua José Fernandes Almeida, 21.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 30,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua José Fernandes Almeida, 25.jpg',
+        endereco: "Rua José Fernandes Almeida, 25.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 31,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua José Fernandes de Almeida, 4..jpg',
+        endereco: "Rua José Fernandes de Almeida, 4.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 32,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua José Raimundo Viana, 2..jpg',
+        endereco: "Rua José Raimundo Viana, 2.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 33,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua José Raimundo Viana, 39..jpg',
+        endereco: "Rua José Raimundo Viana, 39.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 34,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 15.jpg',
+        endereco: "Rua Manoel Samora, 15.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 35,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 17..jpg',
+        endereco: "Rua Manoel Samora, 17.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 36,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 27.jpg',
+        endereco: "Rua Manoel Samora, 27.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 37,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 28.jpg',
+        endereco: "Rua Manoel Samora, 28.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 38,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 41..jpg',
+        endereco: "Rua Manoel Samora, 41.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 39,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 51..jpg',
+        endereco: "Rua Manoel Samora, 51.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 40,
+        bairro: "Bromelias",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 56.jpg',
+        endereco: "Rua Manoel Samora, 56.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 41,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 63..jpg',
+        endereco: "Rua Manoel Samora, 63.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 42,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 69..jpg',
+        endereco: "Rua Manoel Samora, 69.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 43,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 74..jpg',
+        endereco: "Rua Manoel Samora, 74.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 44,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 104..jpg',
+        endereco: "Rua Manoel Samora, 104.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 45,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 106..jpg',
+        endereco: "Rua Manoel Samora, 106.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 46,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 136..jpg',
+        endereco: "Rua Manoel Samora, 136.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 47,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 138.jpg',
+        endereco: "Rua Manoel Samora, 138.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 48,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Manoel Samora, 156.jpg',
+        endereco: "Rua Manoel Samora, 156.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 49,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Professora Ana de Staacks, 1..jpg',
+        endereco: "Rua Professora Ana de Staacks, 1.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 50,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Professora Ana de Staacks, 2..jpg',
+        endereco: "Rua Professora Ana de Staacks, 2.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 51,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Professora Ana Staacks, 5..jpg',
+        endereco: "Rua Professora Ana Staacks, 5.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 52,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Raimundo Pereira de Souza, 2..jpg',
+        endereco: "Rua Raimundo Pereira de Souza, 2.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 53,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Raimundo Pereira de Souza, 3..jpg',
+        endereco: "Rua Raimundo Pereira de Souza, 3.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 54,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Sergipe, 135..jpg',
+        endereco: "Rua Sergipe, 135.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 55,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Bromelias/Rua Walter Giffoni, 3..jpg',
+        endereco: "Rua Walter Giffoni, 3. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 56,
+        bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+
+
+
+
+
+
 
 
 
@@ -290,8 +710,8 @@ const bairroTimirim = "Timirim";
 casasPorBairro(casas, bairroTimirim, "casas-timirim");
 
 
-//const bairroBromelias = "Bromelias";
-//casasPorBairro(casas, bairroBromelias, "casas-bromelias");
+const bairroBromelias = "Bromelias";
+casasPorBairro(casas, bairroBromelias, "casas-bromelias");
 
 //const bairroOlaria = "Olaria";
 //casasPorBairro(casas, bairroOlaria, "casas-olaria");
