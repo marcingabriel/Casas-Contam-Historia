@@ -161,12 +161,144 @@ const casas = [
 
     },
     {
-        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, n 11.jpg',
-        endereco: "Bairro Funcionarios. Avenida Alberto Batista Gallo, n 11.",
-        imagemDesenho: 'img/desenhos/Funcionarios/fachada2.png',
+        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, 4.png',
+        endereco: "Avenida Alberto Batista Gallo, 4.",
+        imagemDesenho: 'img/icon-casa.png',
         drawer: 5,
         bairro: "Funcionarios",
-        video: "https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, 8.png',
+        endereco: "Avenida Alberto Batista Gallo, 8. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 57,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, 10.png',
+        endereco: "Avenida Alberto Batista Gallo, 10. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 58,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Avenida Alberto Batista Gallo, no12.jpg',
+        endereco: "Avenida Alberto Batista Gallo, 12. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 59,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Avenida Almir de Souza Ameno, 28.png',
+        endereco: "Avenida Almir de Souza Ameno, 28. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 60,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Avenida Almir de Souza Ameno, 56.png',
+        endereco: "Avenida Almir de Souza Ameno, 56. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 61,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Avenida Jucelino Kubisckek, 14.png',
+        endereco: "Avenida Jucelino Kubisckek, 14. ",
+        imagemDesenho: 'img/desenhos/5.jpg',
+        drawer: 62,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Endereço Avenida Alberto Batista Gallo, 10.png',
+        endereco: "Avenida Alberto Batista Gallo, 10. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 63,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Endereço Avenida Jucelino Kubisckek, 30.jpg',
+        endereco: "Avenida Jucelino Kubisckek, 30. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 64,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Endereço Avenida Jucelino Kubisckek, 52.jpg',
+        endereco: "Endereço Avenida Jucelino Kubisckek, 52. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 65,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Rua Cinquenta e oito, 7.png',
+        endereco: "Rua Cinquenta e oito, 7. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 66,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Rua Coronel Geraldo Batista, 16C.jpg',
+        endereco: "Rua Coronel Geraldo Batista, 16C. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 67,
+        bairro: "Funcionarios",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Funcionarios/Rua Coronel Geraldo Batista, 18.png',
+        endereco: "Rua Coronel Geraldo Batista, 18. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 68,
+        bairro: "Funcionarios",
+        video: "",
         detalhes: ""
 
     },
@@ -182,6 +314,207 @@ const casas = [
         detalhes: "Localizada em uma das áreas mais pitorescas de Timóteo, nossa casa oferece fácil acesso a todas as comodidades locais, incluindo escolas, supermercados e parques. Situada em uma rua tranquila e arborizada, nossa casa proporciona um ambiente sereno para viver e desfrutar da vida na cidade"
 
     },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-001.jpg',
+        endereco: "Rua Domingos Quaresma, 10.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-002.jpg',
+        endereco: "Rua José Julio Laje, 11.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-003.jpg',
+        endereco: "Rua Domingos Quaresma, 8.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-004.jpg',
+        endereco: "Rua Joaquim Carlos De Oliveira, 16.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-005.jpg',
+        endereco: "Rua Teobaldo Gomes Pinto, 6.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-006.jpg',
+        endereco: "Rua Teobaldo Gomes Pinto, 4.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-007.jpg',
+        endereco: "Rua Teobaldo Gomes Pinto, 8.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-008.jpg',
+        endereco: "Rua José Júlio Laje, 23.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-009.jpg',
+        endereco: "Rua Joaquim Carlos de Oliveira, 6.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-010.jpg',
+        endereco: "Avenida Efigenia Pereira Bitencourt, 34.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-011.jpg',
+        endereco: "Avenida Efigenia Pereira Bitencourt, 40.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-012.jpg',
+        endereco: "Avenida José Viana da Silva, 268.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-013.jpg',
+        endereco: "Avenida José Viana da Silva, 240.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-014.jpg',
+        endereco: "Avenida José Viana da Silva, 267.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-015.jpg',
+        endereco: "Avenida José Viana da Silva, 156.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-016.jpg',
+        endereco: "Avenida Efigenia Pereira Bitencourt, 28.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-017.jpg',
+        endereco: "Avenida Efigenia Pereira Bitencourt, 6.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Timirim/image-018.jpg',
+        endereco: "Avenida Efigenia Pereira Bitencourt, 10.",
+        imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
+        drawer: 69,
+        bairro: "Timirim",
+        video: "",
+        detalhes: ""
+
+    },
+
+
+
 
     //Bairro Vila dos tecnicos
 
