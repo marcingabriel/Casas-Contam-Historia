@@ -330,7 +330,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-002.jpg',
         endereco: "Rua José Julio Laje, 11.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 70,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -341,7 +341,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-003.jpg',
         endereco: "Rua Domingos Quaresma, 8.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 71,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -352,7 +352,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-004.jpg',
         endereco: "Rua Joaquim Carlos De Oliveira, 16.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 72,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -363,7 +363,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-005.jpg',
         endereco: "Rua Teobaldo Gomes Pinto, 6.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 73,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -374,7 +374,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-006.jpg',
         endereco: "Rua Teobaldo Gomes Pinto, 4.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 74,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -385,7 +385,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-007.jpg',
         endereco: "Rua Teobaldo Gomes Pinto, 8.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 75,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -396,7 +396,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-008.jpg',
         endereco: "Rua José Júlio Laje, 23.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 76,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -407,7 +407,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-009.jpg',
         endereco: "Rua Joaquim Carlos de Oliveira, 6.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 77,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -418,7 +418,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-010.jpg',
         endereco: "Avenida Efigenia Pereira Bitencourt, 34.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 78,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -429,7 +429,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-011.jpg',
         endereco: "Avenida Efigenia Pereira Bitencourt, 40.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 79,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -440,7 +440,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-012.jpg',
         endereco: "Avenida José Viana da Silva, 268.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 80,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -451,7 +451,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-013.jpg',
         endereco: "Avenida José Viana da Silva, 240.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 81,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -462,7 +462,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-014.jpg',
         endereco: "Avenida José Viana da Silva, 267.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 82,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -473,7 +473,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-015.jpg',
         endereco: "Avenida José Viana da Silva, 156.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 83,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -484,7 +484,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-016.jpg',
         endereco: "Avenida Efigenia Pereira Bitencourt, 28.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 84,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -495,7 +495,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-017.jpg',
         endereco: "Avenida Efigenia Pereira Bitencourt, 6.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 85,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -506,7 +506,7 @@ const casas = [
         imagemCasa: 'img/casas/Timirim/image-018.jpg',
         endereco: "Avenida Efigenia Pereira Bitencourt, 10.",
         imagemDesenho: 'img/desenhos/Timirim/fachada1.png',
-        drawer: 69,
+        drawer: 86,
         bairro: "Timirim",
         video: "",
         detalhes: ""
@@ -1014,6 +1014,228 @@ const casas = [
         imagemDesenho: 'img/icon-casa.png',
         drawer: 56,
         bairro: "Bromelias",
+        video: "",
+        detalhes: ""
+
+    },
+
+    //Olaria
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-000.jpg',
+        endereco: "Rua Antônio Pedra da Silva,14. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 87,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-001.jpg',
+        endereco: "Rua Antônio Pedra da Silva,12. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 88,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-002.jpg',
+        endereco: "Rua Antônio Pedra da Silva, 3. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 89,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-003.jpg',
+        endereco: "Rua Maria Rodrigues de Carvalho, 11. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 90,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-004.jpg',
+        endereco: "Rua Maria Rodrigues de Carvalho, 18. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 91,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-005.jpg',
+        endereco: "Rua Maria Rodrigues de Carvalho, 14. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 92,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-006.jpg',
+        endereco: "Rua Joaquim Ferreira Santiago, 6. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 93,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-007.jpg',
+        endereco: "Rua Joaquim Ferreira Santiago, 4. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 94,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-008.jpg',
+        endereco: "Rua João Alves de Azevedo, 4.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 95,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-009.jpg',
+        endereco: "Rua João Alves de Azevedo, 8.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 96,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-010.jpg',
+        endereco: "Rua Maria de Rodrigues Carvalho, 10. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 97,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-011.jpg',
+        endereco: "Rua Geraldo Magela Salgado, 10. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 98,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-012.jpg',
+        endereco: "Rua Geraldo Magela Salgado, 10. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 99,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-013.jpg',
+        endereco: "Avenida Judith Maria do Carmo, 58. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 100,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-014.jpg',
+        endereco: "Avenida Judith Maria do Carmo,154. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 101,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-015.jpg',
+        endereco: "Avenida Judith Maria do Carmo,190. ",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 102,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-016.jpg',
+        endereco: "Rua José Zacarias da Silveira, 8.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 103,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-017.jpg',
+        endereco: "Avenida Judith Maria do Carmo,199.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 104,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-018.jpg',
+        endereco: "Avenida Judith Maria do Carmo, 211.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 105,
+        bairro: "Olaria",
+        video: "",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/Olaria/image-019.jpg',
+        endereco: "Avenida Acesita, 298.",
+        imagemDesenho: 'img/icon-casa.png',
+        drawer: 106,
+        bairro: "Olaria",
         video: "",
         detalhes: ""
 
