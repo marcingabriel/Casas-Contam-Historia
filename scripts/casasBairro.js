@@ -11,16 +11,17 @@ function casasPorBairro(casas, bairro, containerId) {
     casasDoBairro.forEach((casa, index) => {
         const carouselHtml = `
         <div id="controls-carousel-${index}" class="mr-5 relative mt-5 mb-5 w-full p-4 flex flex-col" data-carousel="static">
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-72">
                 <div class="loading-spinner absolute inset-0 flex items-center justify-center spinnerContainer"></div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full  h-3/4 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
+                    <img src="${casa.imagemCasa}" class="outraDiv absolute block w-full md:h-3/4 object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-300 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Desenho" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="${casa.imagemDesenho}" class="outraDiv w-full h-3/4 absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110" alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
-
+                    <img src="${casa.imagemDesenho}" class="outraDiv  w-full md:h-3/4 absolute block object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-opacity duration-600 hover:opacity-75 transform transition-transform duration-300 hover:scale-110 " alt="Casa" data-drawer-target="${casa.drawer}" data-drawer-show="${casa.drawer}" aria-controls="${casa.drawer}">
                 </div>
             </div>
+
+    
             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none text-gray-800 dark:text-white" data-carousel-prev>
                 <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 dark:bg-gray-300 ">
                     <svg class="w-5 h-5 text-sienna dark:text-white rtl:rotate-180 hover:text-blue-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
@@ -1261,12 +1262,12 @@ casasPorBairro(casas, bairroCentro, "casas-centro");
 const bairroFuncionarios = "Funcionarios";
 casasPorBairro(casas, bairroFuncionarios, "casas-funcionarios");
 
-const bairroTimirim = "Timirim";
-casasPorBairro(casas, bairroTimirim, "casas-timirim");
+//const bairroTimirim = "Timirim";
+//casasPorBairro(casas, bairroTimirim, "casas-timirim");
 
 
-const bairroBromelias = "Bromelias";
-casasPorBairro(casas, bairroBromelias, "casas-bromelias");
+//const bairroBromelias = "Bromelias";
+//casasPorBairro(casas, bairroBromelias, "casas-bromelias");
 
 //const bairroOlaria = "Olaria";
 //casasPorBairro(casas, bairroOlaria, "casas-olaria");
