@@ -69,15 +69,6 @@ function casasPorBairro(casas, bairro, containerId) {
             <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereco}"</p>
             <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600"> ${casa.detalhes}</p>
                 
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Documentario da casa</div>
-                <p class="text-gray-700 text-base text-left">
-                    Descrição do vídeo.
-                </p>
-            </div>
-            <iframe width="w-full" height="350" src="${casa.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-               
-      
             <div class="py-4 text-center items-center">
                 <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" onclick="window.open('https://www.google.com/maps/d/u/0/viewer?mid=1W8_QiOSp1uzTWyAPHwDGDDFahhPzCUo&femb=1&ll=-19.585877802214714%2C-42.648934215410065&z=22', '_blank')">Ver no Google Maps</button>     
             </div>
@@ -87,8 +78,8 @@ function casasPorBairro(casas, bairro, containerId) {
 
         const modalHtml = `
         <!-- Main modal -->
-        <div id="crud-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative p-8 w-full max-w-3xl  md:max-w-4xl lg:max-w-4xl">
+        <div id="crud-modal" tabindex="-1" aria-hidden="true" class="hidden  overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 ">
+            <div class="relative p-8 w-full max-w-3xl max-h-screen ">
                 <!-- Modal content -->
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <!-- Modal header -->
@@ -106,7 +97,7 @@ function casasPorBairro(casas, bairro, containerId) {
                     <!-- Modal body -->
                     <form class="p-4 md:p-5">
                         <div class="relative">
-                            <img id="modal-image" src="" alt="Imagem em tamanho maior" class="w-full h-full">
+                            <img id="modal-image" src="" alt="Imagem em tamanho maior" class="">
                         </div>
                     </form>
                 </div>
