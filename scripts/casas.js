@@ -68,13 +68,7 @@ function casasPorBairro(casas, bairro, containerId) {
                 <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600">"${casa.endereco}"</p>
                 <p class="text-left mb-6 text-sm text-gray-800 dark:text-gray-600"> ${casa.detalhes}</p>
                 
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Documentario da casa</div>
-                        <p class="text-gray-700 text-base text-left">
-                            Descrição do vídeo.
-                        </p>
-                </div>
-                <iframe width="w-full" height="350" src="https://www.youtube.com/embed/vveDw4Uth3s?si=9OA1OFR2bO0umU79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
                
       
                 <div class="py-4 text-center items-center">
