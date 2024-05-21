@@ -2,50 +2,54 @@ function exibirDepoimentos(depoimentos, containerId) {
     const container = document.getElementById(containerId);
     container.innerHTML = ''; // Limpa o conteúdo do container
 
+    let depoimentosHtml = ''; // Variável para armazenar o HTML dos depoimentos
+    let modaisHtml = ''; // Variável para armazenar o HTML dos modais
+
     depoimentos.forEach((depoimento, index) => {
-        const modalHtml = `
-        <!-- Modal overlay -->
-        <div id="crud-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50" onclick="fecharModal(event)">
-            <!-- Modal content -->
-            <div class="bg-white rounded-lg shadow dark:bg-gray-700 max-w-lg w-full p-6 relative" onclick="event.stopPropagation()">
-                <!-- Modal header -->
-                <div class="flex items-center justify-between border-b pb-4 mb-4">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        Depoimento
-                    </h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" onclick="fecharModal()">
-                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                        <span class="sr-only">Fechar modal</span>
-                    </button>
-                </div>
-                <!-- Modal body -->
-                <div class="text-gray-700 dark:text-gray-300">
-                    <p>${depoimento.texto}</p>
-                </div>
+        const depoimentoId = `depoimento-${index}`;
+        const modalId = `modal-${index}`;
+        const modalTextId = `modal-text-${index}`;
+
+        // Cria o HTML do depoimento
+        depoimentosHtml += `
+        <div class="flex flex-col items-center p-8 rounded-lg shadow-md">
+            <h3 class="text-center font-playfair-display font-bold text-2xl mb-4">
+                <span class="block font-bold">VILA DOS TECNICOS</span>
+            </h3>
+            <p class="text-center text-gray-600 mb-4">${depoimento.texto}</p>
+            <a href="#" id="${depoimentoId}" class="ler-mais text-center text-blue-500 uppercase font-semibold tracking-wide transition transform hover:scale-110">Ler mais </a>
+        </div>
+        `;
+
+        // Cria o HTML do modal correspondente
+        modaisHtml += `
+        <div id="${modalId}" class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3">
+                <h3 class="text-center font-playfair-display font-bold text-2xl mb-4">Depoimento Completo</h3>
+                <p id="${modalTextId}" class="text-center text-gray-600 mb-4">${depoimento.texto}</p>
+                <button class="close-modal block mx-auto mt-4 bg-blue-500 text-white p-2 rounded">Fechar</button>
             </div>
         </div>
         `;
-        container.innerHTML += modalHtml;
     });
-}
 
-function abrirModal() {
-    const modal = document.getElementById('crud-modal');
-    modal.classList.remove('hidden');
-}
+    // Adiciona o HTML dos depoimentos e dos modais ao container
+    container.innerHTML = depoimentosHtml + modaisHtml;
 
-function fecharModal(event) {
-    if (event) {
-        const modal = document.getElementById('crud-modal');
-        if (event.target === modal || event.target.closest('button')) {
-            modal.classList.add('hidden');
-        }
-    } else {
-        const modal = document.getElementById('crud-modal');
-        modal.classList.add('hidden');
-    }
+    // Adiciona eventos de clique para abrir e fechar os modais
+    depoimentos.forEach((depoimento, index) => {
+        const depoimentoId = `depoimento-${index}`;
+        const modalId = `modal-${index}`;
+
+        document.getElementById(depoimentoId).addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById(modalId).classList.remove('hidden');
+        });
+
+        document.getElementById(modalId).querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById(modalId).classList.add('hidden');
+        });
+    });
 }
 
 // Exemplo de depoimentos
@@ -55,11 +59,10 @@ const depoimentos = [
     },
     {
         texto: "Este é o segundo depoimento. O modal pode exibir vários depoimentos se necessário.",
-    }
+    },
+    {
+        texto: "Este é o terceiro depoimento.",
+    },
 ];
 
-document.getElementById('ler-mais').addEventListener('click', function(event) {
-    event.preventDefault();
-    exibirDepoimentos(depoimentos, 'modal-container');
-    abrirModal();
-});
+exibirDepoimentos(depoimentos, "depoimentos-container");
