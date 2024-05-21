@@ -601,6 +601,148 @@ const casas = [
 
     },
 
+    {
+        imagemCasa: 'img/casas/tecnicos/image-000.jpg',
+        endereco: "Rua Levindo Ribeiro Araújo Duarte, 8.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 107,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-001.jpg',
+        endereco: "Rua Maria Aparecida Martins Prado, 29.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 108,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-002.jpg',
+        endereco: "Rua Maria Aparecida Martins Prado, 21.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 109,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-003.jpg',
+        endereco: "Rua Maria Aparecida Martins Prado, 15.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 110,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-004.jpg',
+        endereco: "Rua 43, 5.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 111,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-005.jpg',
+        endereco: "Rua 43.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 112,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-006.jpg',
+        endereco: "Rua Maria Aparecida Martins Prado, 8.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 113,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-007.jpg',
+        endereco: "Rua Jair de Freitas, 5.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 114,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-010.jpg',
+        endereco: "Rua Trinta e Sete, 24.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 115,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-011.jpg',
+        endereco: "Rua Trinta e Sete, 26.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 116,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-015.jpg',
+        endereco: " Avenida Levindo Ribeiro Araujo, 26.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 117,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-019.jpg',
+        endereco: "Rua Trinta e Sete, 4.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 118,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-020.jpg',
+        endereco: " Rua Trinta e Sete, 13.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 119,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    {
+        imagemCasa: 'img/casas/tecnicos/image-023.jpg',
+        endereco: "Avenida Levindo Ribeiro Araujo, 4.",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 120,
+        bairro: "Tecnicos",
+        detalhes: ""
+
+    },
+
+    
+
     //Bairro Bromelias
    
     {
@@ -1217,7 +1359,6 @@ const casas = [
         imagemDesenho: 'img/icon-casa.png',
         drawer: 105,
         bairro: "Olaria",
-        video: "",
         detalhes: ""
 
     },
@@ -1228,7 +1369,6 @@ const casas = [
         imagemDesenho: 'img/icon-casa.png',
         drawer: 106,
         bairro: "Olaria",
-        video: "",
         detalhes: ""
 
     },
