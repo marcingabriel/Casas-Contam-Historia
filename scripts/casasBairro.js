@@ -1401,8 +1401,8 @@ casasPorBairro(casas, bairroCentro, "casas-centro");
 const bairroFuncionarios = "Funcionarios";
 casasPorBairro(casas, bairroFuncionarios, "casas-funcionarios");
 
-//const bairroTimirim = "Timirim";
-//casasPorBairro(casas, bairroTimirim, "casas-timirim");
+const bairroTimirim = "Timirim";
+casasPorBairro(casas, bairroTimirim, "casas-timirim");
 
 
 //const bairroBromelias = "Bromelias";
