@@ -24,12 +24,17 @@ function exibirDepoimentos(depoimentos, containerId) {
         // Cria o HTML do modal correspondente
         modaisHtml += `
         <div id="${modalId}" class="modal hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
-            <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-11/12 md:w-1/2 lg:w-1/3 relative">
+                <button class="absolute top-2 right-2 text-gray-600 hover:text-blue-800 close-modal text-2xl">
+                    &times;
+                </button>
                 <h3 class="text-center font-playfair-display font-bold text-2xl mb-4">Depoimento Completo</h3>
                 <p id="${modalTextId}" class="text-center text-gray-600 mb-4">${depoimento.texto}</p>
-                <button class="close-modal block mx-auto mt-4 bg-blue-500 text-white p-2 rounded">Fechar</button>
+                <button class="close-button block mx-auto mt-4 bg-blue-500 text-white p-2 rounded">Fechar</button>
             </div>
         </div>
+    
+    
         `;
     });
 
@@ -40,17 +45,40 @@ function exibirDepoimentos(depoimentos, containerId) {
     depoimentos.forEach((depoimento, index) => {
         const depoimentoId = `depoimento-${index}`;
         const modalId = `modal-${index}`;
-
+    
+        const modal = document.getElementById(modalId);
+        const modalContent = modal.querySelector('.bg-white');
+    
         document.getElementById(depoimentoId).addEventListener('click', function(event) {
             event.preventDefault();
-            document.getElementById(modalId).classList.remove('hidden');
+            modal.classList.remove('hidden');
         });
-
-        document.getElementById(modalId).querySelector('.close-modal').addEventListener('click', function() {
-            document.getElementById(modalId).classList.add('hidden');
+    
+        modal.querySelector('.close-modal').addEventListener('click', function() {
+            modal.classList.add('hidden');
+        });
+    
+        modal.querySelector('.close-button').addEventListener('click', function() {
+            modal.classList.add('hidden');
+        });
+    
+        // Adicionando evento para fechar o modal ao clicar fora dele
+        document.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    
+        // Impedir que o clique no conteúdo do modal feche o modal
+        modalContent.addEventListener('click', function(event) {
+            event.stopPropagation();
         });
     });
+    
 }
+
+
+
 
 // Exemplo de depoimentos
 const depoimentos = [
