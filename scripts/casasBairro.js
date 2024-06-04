@@ -1395,14 +1395,14 @@ const casas = [
 
 // Chama a função para exibir casas do bairro "Centro"
 
-const bairroCentro = "Centro";
-casasPorBairro(casas, bairroCentro, "casas-centro");
+//const bairroCentro = "Centro";
+//casasPorBairro(casas, bairroCentro, "casas-centro");
 
-const bairroFuncionarios = "Funcionarios";
-casasPorBairro(casas, bairroFuncionarios, "casas-funcionarios");
+//const bairroFuncionarios = "Funcionarios";
+//casasPorBairro(casas, bairroFuncionarios, "casas-funcionarios");
 
-const bairroTimirim = "Timirim";
-casasPorBairro(casas, bairroTimirim, "casas-timirim");
+//const bairroTimirim = "Timirim";
+//casasPorBairro(casas, bairroTimirim, "casas-timirim");
 
 
 //const bairroBromelias = "Bromelias";
