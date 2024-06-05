@@ -1377,15 +1377,15 @@ const casas = [
   //Bairro Quintandinha comecando do 121
 
 
-  {
-    imagemCasa: 'img/casas/Quintandinha/image-000.jpg',
-    endereco: "?",
-    imagemDesenho: 'img/desenhos/2.jpg',
-    drawer: 121,
-    bairro: "Quintandinha",
-    detalhes: ""
+    {
+        imagemCasa: 'img/casas/Quintandinha/image-000.jpg',
+        endereco: "?",
+        imagemDesenho: 'img/desenhos/2.jpg',
+        drawer: 121,
+        bairro: "Quintandinha",
+        detalhes: ""
 
-},
+    },
 
 
 

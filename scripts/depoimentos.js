@@ -12,13 +12,15 @@ function exibirDepoimentos(depoimentos, containerId) {
 
         // Cria o HTML do depoimento
         depoimentosHtml += `
-        <div class="flex flex-col items-center p-8 rounded-lg shadow-md">
-            <h3 class="text-center font-playfair-display font-bold text-2xl mb-4">
-                <span class="block font-bold">${depoimento.bairro}</span>
-            </h3>
-            <p class="text-center text-gray-600 mb-4">${depoimento.texto}</p>
-            <a href="#" id="${depoimentoId}" class="ler-mais text-center text-blue-500 uppercase font-semibold tracking-wide transition transform hover:scale-110">Ler mais </a>
-        </div>
+            <div class="flex flex-col items-center p-8 rounded-lg shadow-md">
+                <h3 class="text-center font-playfair-display font-bold text-2xl mb-2">
+                    <span class="block font-bold">${depoimento.bairro}</span>
+                </h3>
+                <h4 class="text-center font-medium text-gray-500 text-sm mb-4">${depoimento.endereço}</h4> <!-- Subtítulo adicionado -->
+                <p class="text-center text-gray-600 mb-4">${depoimento.texto}</p>
+                <a href="#" id="${depoimentoId}" class="ler-mais text-center text-blue-500 uppercase font-semibold tracking-wide transition transform hover:scale-110">Ler mais</a>
+            </div>
+
         `;
 
         // Cria o HTML do modal correspondente
@@ -161,7 +163,8 @@ const depoimentos = [
     {
         bairro: "Funcionários ",
         texto: "Existem dificuldades para a preservação ou manutenção da casa? R: Não, já tem mais de 60 anos e como foi feita de madeiras muito nobres, aqui tem peroba rosa e outros tipos de madeira que meu marido saberia identificar para vocês. ...", 
-        entrevista: entrevista
+        entrevista: entrevista,
+        endereço: "Avenida Alberto Batista Gallo"
 
         
     },
