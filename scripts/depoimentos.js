@@ -12,16 +12,29 @@ function exibirDepoimentos(depoimentos, containerId) {
 
         // Cria o HTML do depoimento
         depoimentosHtml += `
-            <div class="flex flex-col items-center p-8 rounded-lg shadow-md md:m-2 m-5 lg:m-0">
+        <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg  object-cover object-center md:h-2/5 w-full" src="${depoimento.desenho}" alt="desenho" />
+            </a>
+            <div class="p-5">
                 <h3 class="text-center font-playfair-display font-bold text-2xl mb-2">
                     <span class="block font-bold">${depoimento.bairro}</span>
                 </h3>
                 <h4 class="text-center font-medium text-gray-500 text-sm mb-4">${depoimento.endereço}</h4> <!-- Subtítulo adicionado -->
-                <p class="text-center text-gray-600 mb-4">${depoimento.texto}</p>
-                <a href="#" id="${depoimentoId}" class="ler-mais text-center text-blue-500 uppercase font-semibold tracking-wide transition transform hover:scale-110">Ler mais</a>
+                <p class="text-center text-gray-600 mb-4 text-base">${depoimento.texto}</p>
+                <a href="#" id="${depoimentoId}" class="  inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Ler mais
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
             </div>
+        </div>
 
         `;
+
+
+
 
         // Cria o HTML do modal correspondente
         modaisHtml += `
@@ -317,21 +330,23 @@ const depoimentos = [
         bairro: "Funcionários ",
         texto: "Existem dificuldades para a preservação ou manutenção da casa? R: Não, já tem mais de 60 anos e como foi feita de madeiras muito nobres, aqui tem peroba rosa e outros tipos de madeira que meu marido saberia identificar para vocês. ...", 
         entrevista: entrevista1,
-        endereço: "Avenida Alberto Batista Gallo"
-
+        endereço: "Avenida Alberto Batista Gallo",
+        desenho: "img/desenhos/2.jpg"
         
     },
     {
         bairro: "Funcionários",
-        texto: " Há quanto tempo mora na casa? R: Eu moro aqui desde 1962. É proprietário? R: Sou proprietária.",
+        texto: " A história da casa é importante para você? R: É né, os filhos foram criados aqui, eu trabalhei aqui no grupo Getúlio Vargas, é tudo perto, pra mim foi ótimo. R: É super interessante, porque desde criancinha nós vivemos aí no quintal, nosso pai criava galinhas ...",
         entrevista: entrevista2,
-        endereço: "Instituto de Educação Passos Gigantes"
+        endereço: "Instituto de Educação Passos Gigantes",
+        desenho: "img/desenhos/3.jpg"
     },
     {
         bairro: "Bromélias",
         texto: "Houveram acontecimentos marcantes na casa? R: Eu lembro quando eu era criança, era piso vermelhão, fazia com xadrez, não tinha cerâmica. Era uma casa muito simples então, aquele vermelhão cimentado, passava o xadrez aí tinha vermelho, amarelo, verde, o nosso era vermelho, aí vinha e encerava",
         entrevista: entrevista3,
-        endereço: "Bromélias - Irmãos"
+        endereço: "Bromélias - Irmãos",
+        desenho: "img/desenhos/4.jpg"
     },
 ];
 
