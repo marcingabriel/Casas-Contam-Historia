@@ -12,7 +12,7 @@ function exibirDepoimentos(depoimentos, containerId) {
 
         // Cria o HTML do depoimento
         depoimentosHtml += `
-        <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  md:m-2 m-5 lg:m-0">
             <a href="#">
                 <img class="rounded-t-lg  object-cover object-center md:h-2/5 w-full" src="${depoimento.desenho}" alt="desenho" />
             </a>
