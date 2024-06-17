@@ -21,7 +21,7 @@ function exibirDepoimentos(depoimentos, containerId) {
                     <span class="block font-bold">${depoimento.bairro}</span>
                 </h3>
                 <h4 class="text-center font-medium text-gray-500 text-sm mb-4">${depoimento.endereço}</h4> <!-- Subtítulo adicionado -->
-                <p class="text-center text-gray-600 mb-4 text-base">${depoimento.texto}</p>
+                <p class="text-center text-gray-600 mb-4 text-sm md:text-base">${depoimento.texto}</p>
                 <a href="#" id="${depoimentoId}" class="  inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     Ler mais
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -324,6 +324,192 @@ const entrevista3 = `
     </div>
 `
 
+    const entrevista4= ` 
+      <div class="space-y-4">
+    <div>
+        <h4 class="font-semibold">Bromélias - Rua Manoel Samora </h4>
+    </div>
+    <div>
+        <h5 class="font-semibold">Há quanto tempo mora na casa??</h5>
+        <p>R: São 7 anos.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">É proprietário? Em qual contexto você se encontra nela hoje?</h5>
+        <p>R:Não sou proprietário da casa. Eu falo que eu sou um merecedor de ter essa casa, esse quintal, foi um desejo e ela aconteceu pra mim, apareceu essa casa, e eu cuido dela há 7 anos. Ela é alugada e os donos são uma construtora, o objetivo deles é construir um prédio, porém o plano diretor atual da cidade não permite uma construção tão grande, então eles esperam para ter essa oportunidade de fazer um projeto maior aqui.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Sabe quem foi o primeiro morador?</h5>
+        <p>R:: A primeira família a morar era a família de um engenheiro italiano que veio trabalhar na construção da Acesita, 
+        então a casa é da época de 60 para 70. O engenheiro se chamava Giovanni Moro.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A casa já passou por alguma reforma ou intervenção?</h5>
+        <p>R: Eu acho que a fachada mesmo, ela conserva, o próprio símbolo da Acesita está gravado na frente, os triângulos invertidos. Então eu acredito que a fachada não passou por reformas, a única coisa foi o forro, que foi colocado um forro de PVC nela, no mais, a fachada continua, 
+        alpendre e o ladrilho também são originais, eu acredito</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Existem dificuldades para a preservação ou manutenção da casa?</h5>
+        <p>R: As telhas são telhas francesas e a madeira é muito antiga, 
+        então dá muito cupim. O peso do telhado também é uma coisa muito forte, 
+        então dá goteiras na casa, isso é uma dificuldade.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Sabia que essa casa é da época da implantação da siderúrgica?</h5>
+        <p>R: Isso!</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A história da casa é importante para você?</h5>
+        <p>R: Eu acredito que sim, mas acredito também na energia que eu trago para as casas que eu vou morar sempre, como eu estou aqui hoje, amanhã eu posso não estar então eu tenho certeza que qualquer lugar que eu for vai ter a minha energia, 
+        as minhas características vão estar implantadas na casa, então eu posso dar vida a qualquer ambiente em que eu estiver.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A história da casa é importante para a cidade?</h5>
+        <p>R:Com certeza, hoje, atualmente então como esse espaço cultural de receber artistas, de trazer conhecimento de obras e de jardinagem e paisagismo, nesse contexto hoje, ela se 
+        torna mais importante do que só uma fachada, então com certeza é importantíssimo.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Houveram acontecimentos marcantes na casa?</h5>
+        <p>R: Todos os acontecimentos são marcantes, a visita do Tizumba, as folias, os boi bumbás, as 
+        cantorias que a gente faz de rodas de violas, tudo isso é marcante pra mim em cada ocasião</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Se não fosse por esse espaço, seria mais difícil realizar essas atividades?</h5>
+        <p>R:Com certeza, essas atividades só acontecem por causa do espaço. 
+        Acaba sendo uma locação para vários artistas fazerem seus clipes, então com certeza.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Entende sobre patrimônio histórico?</h5>
+        <p>R:Pode ser material ou imaterial. Eu acredito que essa casa poderia facilmente ser tombada se os donos quisessem isso, 
+        como patrimônio é uma coisa que traga alguma referência para a cidade, o contexto da
+         implementação siderúrgica, essa história de ter o símbolo da Acesita. 
+         Então tem essa importância o patrimônio material do espaço físico. 
+         Como uma casa de patrimônio material a gente recebe guardas de Congado, 
+         por exemplo,  que são patrimônios imateriais da cidade de Timóteo. A guarda de Congo de São Sebastião de Timóteo é uma parceira nossa, da casa, a gente faz estandartes da folia, do congado, e depois eles vem, tem a feijoada, a fogueira, tem o hasteamento da bandeira. Esse é o nosso patrimônio imaterial que está sendo preservado a partir dessa dinâmica da casa.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Conhece algum patrimônio histórico de Timóteo?</h5>
+        <p>R: A igreja eu acredito que já é né, a igreja de São José do Operário, 
+        a fundação Aperam é também. A gente perdeu a pouco tempo o hotel que era o 
+        restaurante Monte Alto, que foi demolido. Mas casas como essa, existem 
+        várias por aí, esse muro de cobogó, toda essa fachada é muito comum, 
+        é só reparar mais que você vai encontrar nessas fachadas.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Qual a importância do patrimônio histórico para você e para a cidade?</h5>
+        <p>R: Deixar esse legado, deixar essas informações, isso é o patrimônio histórico, 
+        levar essas informações e não deixar isso guardado.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A siderúrgica tem um papel significativo para a construção da história da cidade?</h5>
+        <p>R:Importante, com certeza é importante, mas nem sempre é benéfico. 
+        Acho que é uma questão de mais valia, de exploração do serviço e de concessão 
+        de áreas, o tanto de território que a indústria possui no nosso redor, 
+        nesse contexto de Timóteo, para expansão por exemplo, essas áreas 
+        poderiam ser mais bem estruturadas. E aí fica em uma coisa meio de áreas de 
+        preservação ambientais que são importantíssimas, aí eles plantam eucalipto, 
+        que é uma coisa que prejudica, aqui por exemplo os cupins, aqui atrás tem uma 
+        mata de eucalipto da Aperam, então essa preservação não é a preservação que a 
+        gente quer. Agora financeiramente para o desenvolvimento da cidade a aperam é 
+        super rentável.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">O patrimônio histórico de Timóteo está sendo preservado?</h5>
+        <p>R: Não, de forma alguma. Os únicos bens que são realmente preservados é a 
+        Igrejinha de São José e a fundação Aperam, no mais nenhum dos outros bens tem 
+        algum incentivo ou alguma coisa para se preservar. Por exemplo, 
+        o Quintal Café com Arte, é uma fachada que está sendo preservada, 
+        e de uma forma muito elegante e consciente de ser, então mais iniciativas como
+         essa deveriam ser tomadas</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">O que a população pode fazer para preservar o patrimônio histórico?</h5>
+        <p>R:</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Como as pessoas podem aprender mais e serem conscientizadas sobre este patrimônio?</h5>
+        <p>R:Participando, convivendo com esse tipo de estruturas, então estou citando mais uma vez o Quintal Café com Arte, porque é um lugar que você pode ver a 
+        beleza na arquitetura daquela forma que era na década de 60, 70, e mesmo assim enxergar o belo da coisa, o olhar estético da coisa.</p>
+    </div>
+    </div>
+`
+    const entrevista5 = `
+        <div class="space-y-4">
+    <div>
+        <h4 class="font-semibold">Vila dos Técnicos - Zona Eleitoral</h4>
+    </div>
+    <div>
+        <h5 class="font-semibold">Há quanto tempo trabalha na casa?</h5>
+        <p>R: 6 anos.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Há quanto tempo a proprietária mora na casa?</h5>
+        <p>R:  Eu acho que mais de 50 anos.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Foi o primeiro morador? Sabe quem foi?</h5>
+        <p>R:</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A casa já passou por alguma reforma ou intervenção?</h5>
+        <p>R: Não.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Existem dificuldades para a preservação ou manutenção da casa?</h5>
+        <p>R: Não, tranquilo.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Sabia que essa casa é da época da implantação da siderúrgica?</h5>
+        <p>R: Sim!</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A história da casa é importante para você?</h5>
+        <p>R: Para mim não, mas pros moradores é né? Deve ser.</p>
+    <div>
+        <h5 class="font-semibold">A história da casa é importante para a cidade?</h5>
+        <p>R: É importante sim.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Houveram acontecimentos marcantes na casa?</h5>
+        <p>R: Não.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Entende sobre patrimônio histórico?</h5>
+        <p>R:</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Conhece algum patrimônio histórico de Timóteo?</h5>
+        <p>R: Coliseu, tem um alto forno lá na Olaria.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Qual a importância do patrimônio histórico para você e para a cidade?</h5>
+        <p>R:</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">A siderúrgica tem um papel significativo para a construção da história da cidade?</h5>
+        <p>R: Teve sim.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">O patrimônio histórico de Timóteo está sendo preservado?</h5>
+        <p>R:Tá não.</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">O que a população pode fazer para preservar o patrimônio histórico?</h5>
+        <p>R:</p>
+    </div>
+    <div>
+        <h5 class="font-semibold">Como as pessoas podem aprender mais e serem conscientizadas sobre este patrimônio?</h5>
+        <p>R:Não sei não</p>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    `
+    
+
 // Exemplo de depoimentos
 const depoimentos = [
     {
@@ -347,6 +533,21 @@ const depoimentos = [
         entrevista: entrevista3,
         endereço: "Bromélias - Irmãos",
         desenho: "img/desenhos/4.jpg"
+    },
+    {
+        bairro: "Bromélias",
+        texto: "A história da casa é importante para a cidade? R: Com certeza, hoje, atualmente então como esse espaço cultural de receber artistas, de trazer conhecimento de obras e de jardinagem e paisagismo, nesse contexto hoje, ela se torna ...",
+        entrevista: entrevista4,
+        endereço: "Bromélias - Rua Manoel Samora",
+        desenho: "img/desenhos/4.jpg"
+    },
+
+    {
+        bairro: "Vila dos Técnicos ",
+        texto: "Existem dificuldades para a preservação ou manutenção da casa?R: Não, tranquilo.Sabia que essa casa é da época da implantação da siderúrgica?R: Sim!A história da casa é importante para você?R: Para mim não, mas pros moradores é ...",
+        entrevista: entrevista5,
+        endereço: "Vila dos Técnicos - Zona Eleitoral",
+        desenho: "img/desenhos/7.jpg"
     },
 ];
 
