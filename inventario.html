@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/png" href="img/icon-casa.png">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/style.css">
     <style>
 
                 
@@ -189,7 +189,7 @@
 
                     <h1 class="text-center custom-font tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl">Galeria</h1>
                     <div class="relative ">
-                        <input type="text" id="barraPesquisa" class="p-2 pl-20 border border-gray-300 rounded-md mb-4" placeholder="Pesquisar bairro...">
+                        <input type="text" id="filtroBairroInput" class="p-2 pl-20 border border-gray-300 rounded-md mb-4" placeholder="Pesquisar bairro...">
                         <svg class="absolute top-3 left-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" fill="currentColor">
                             <path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"  />
                         </svg>
@@ -213,22 +213,10 @@
             
 
             <div class="z-35 container mx-auto mt-4">
+                <div id="root-galeria"></div>
+                <script type="module" src="/src/galeria.jsx"></script>
 
-  
-
-                <div class="mt-2" id="container-tecnicos">
-                    <h1 class="text-center uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl ">Vila dos Tecnicos</h1>
-                    <div id="casas-tecnicos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <!-- Conteúdo da grid aqui -->
-                    </div>
-                </div>
-
-
-                <div id="container-centro">
-                    <h1 class="text-center uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl ">Centro</h1>
-                    <div id="casas-centro" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <!-- Conteúdo da grid aqui -->
-                    </div>
+              
                 </div>
             </div>
         </div>
@@ -253,8 +241,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="scripts/casasBairro.js"></script> 
-    <script src="scripts/search.js"></script>
+
 
 
 

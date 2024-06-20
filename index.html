@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casas Contam Historia</title>
-    <link rel="stylesheet" type="text/css" href="style1.css">
-    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/style1.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/style.css">
     <link rel="icon" type="image/png" href="img/icon-casa.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
      <!-- Make sure you put this AFTER Leaflet's CSS -->
@@ -113,9 +114,8 @@
 
 <div class="container mx-auto mt-24">
     <h1 class="text-3xl font-bold text-center text-gray-600 mt-5 animate opacity-0 ">Galeria</h1>
-    <div class="flex flex-col md:flex-row justify-center md:justify-start mt-5">
-        <div id="destaque" class="z-35 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 "></div>
-    </div>
+      <div id="root-index"></div>
+
     <div class="text-center mt-5">
         <a href="inventario.html">
             <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
@@ -199,6 +199,7 @@
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="scripts/casas.js"></script> 
+    <script type="module" src="/src/main.jsx"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="scripts/animation.js"></script>
